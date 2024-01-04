@@ -1,9 +1,6 @@
 /* Base Styles (extra small devices - mobile) */
 
-html {
-    margin: 0;
-    padding: 0;
-}
+html {}
 
 body {
     font-family: Inter, sans-serif;
@@ -11,6 +8,8 @@ body {
     font-weight: 700;
     line-height: 24px;
     color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -42,6 +41,7 @@ h3 {
 
     margin-top: 78px;
     margin-left: 32px;
+    margin-bottom: 78px;
 }
 
 #top-section {
@@ -49,8 +49,6 @@ h3 {
     height: 1024px;
     background-size: cover;
     background-position: center;
-    margin: 0;
-    padding: 0;
 }
 
 #navbar {
@@ -60,7 +58,7 @@ h3 {
 
 #hamburger-menu {
     padding-left: 112px;
-    padding-right: 29px;
+    padding-right: 32px;
 }
 
 #rectangle-3 {
@@ -107,7 +105,6 @@ h3 {
     display: flex;
     flex-direction: column;
     max-width: 375px;
-    justify-content: center;
 }
 
 #detail {
@@ -117,7 +114,8 @@ h3 {
 }
 
 #newscard {
-    margin: 16px 32px 32px 16px;
+    justify-content: center;
+    margin: 16px 32px 32px 32px;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
 }
@@ -145,14 +143,87 @@ h3 {
     width: 100%;
 }
 
+.navbar-menu {
+    display: none;
+}
+
 /* Small devices (tablets) */
 @media screen and (min-width: 576px) {
-    /* CSS rules */
+    #top-section {
+        background-image: url(Background\ image\ 2.svg);
+    }
+
 }
 
 /* Medium devices (laptops) */
 @media screen and (min-width: 768px) {
-    /* CSS rules */
+    #hamburger-menu {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: inline;
+        margin-right: 35px;
+        margin-top: 24px;
+
+        color: #FFF;
+        font-family: Inter, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    h1 {
+        margin-right: 490px;
+    }
+
+    #menu-button {
+        border: 2px solid #FFFFFF;
+        padding: 8px;
+
+        color: #FFF;
+        font-family: Inter, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+    }
+
+    h2 {
+        max-width: 748px;
+        color: #FFF;
+        font-family: Libre Caslon Display, sans-serif;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .description {
+        width: 528px;
+        color: #FFF;
+        font-family: Inter, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 168.523%;
+        /* 30.334px */
+    }
+
+    #bottom-section {
+        display: flex;
+        flex-direction: row;
+        margin: 0 72px 0 72px;
+    }
+
+    #newscard {
+        width: 419px;
+        margin-right: 20px;
+    }
+
+    h3 {
+    margin: 89px 1099px 44px 72px;
+    }
+
 }
 
 /* Large devices (desktops) */
